@@ -6,16 +6,94 @@
     <link
       rel="icon"
       type="image/svg+xml"
-      href=""
+      href="./assets/images/favicon-32x32.png"
     />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <!-- CAMBIA EL TITLE!!! -->
-    <title>Nuevo títuloo</title>
+    <title>Clipboard Landing</title>
   </head>
   <body>
+    <header class="header">
+      <img
+        class="logo"
+        src="./assets/images/logo.svg"
+        alt="Logo"
+      />
+      <h1 class="title">A history of everything you copy</h1>
+      <p class="paragraph">
+        Clipboard allows you to track and organize everything you copy.
+        Instantly access your clipboard on all your devices.
+      </p>
+      <div class="buttons">
+        <a
+          class="button-ios"
+          href="#"
+          >Download for iOS</a
+        >
+        <a
+          class="button-mac"
+          href="#"
+          >Download for Mac</a
+        >
+      </div>
+      <picture>
+        <source
+          media="(min-width:768px)"
+          srcset="./assets/images/bg-header-desktop.png"
+        />
+        <source
+          media="(min-width:360px)"
+          srcset="./assets/images/bg-header-mobile.png"
+        />
+        <img
+          class="background-image-header"
+          src="./assets/images/bg-header-mobile.png"
+          alt="img"
+        />
+      </picture>
+    </header>
+    <main class="main">
+      <section class="section section--left">
+        <article class="section__header">
+          <h2 class="title">Keep track of your snippets</h2>
+          <p class="paragraph">
+            Clipboard instantly stores any item you copy in the cloud, meaning
+            you can access your snippets immediately on all your devices. Our
+            Mac and iOS apps will help you organize everything.
+          </p>
+        </article>
+        <article class="article-two-columns">
+          <img
+            class="photo computer"
+            src="./assets/images/image-computer.png"
+            alt="computer"
+          />
+          <article class="column">
+            <h2 class="title title--litle">Quick Search</h2>
+            <p class="paragraph paragraph-little">
+              Easily search your snippets by content, category, web address,
+              application, and more.
+            </p>
+          </article>
+        </article>
+      </section>
+    </main>
     <script
       type="module"
       src="./js/index.js"

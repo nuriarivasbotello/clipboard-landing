@@ -1,1 +1,10 @@
-
+@use '../mixins/responsive.scss' as *;
+@use '../mixins/pseudo.scss' as *;
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-top: 130px;
+}

@@ -1,1 +1,36 @@
-
+@use '../mixins/responsive.scss' as *;
+.buttons {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  font-family: 'Bai Jamjuree', sans-serif;
+  color: white;
+  @include responsive(desktop) {
+    width: 470px;
+    display: flex;
+    flex-direction: row;
+    text-align: space-between;
+    margin-top: 20px;
+  }
+}
+.button-ios {
+  width: 311px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5rem;
+  box-shadow: 1px 1px 4px black;
+  background-color: var(--color-button-ios);
+}
+.button-mac {
+  width: 311px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5rem;
+  box-shadow: 1px 1px 4px black;
+  background-color: var(--color-button-mac);
+}
