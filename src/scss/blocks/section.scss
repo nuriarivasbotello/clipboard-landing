@@ -1,0 +1,20 @@
+@use '../mixins/responsive.scss' as *;
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include responsive(desktop) {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 150px 570px;
+        gap:100px;
+    }
+    &__header{
+        @include responsive(desktop) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@use '../mixins/responsive.scss' as *;
+.article-two-columns{
+    
+        @include responsive(desktop) {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100%;
+            gap:100px;
+            position: relative;
+        }
+    
+}
