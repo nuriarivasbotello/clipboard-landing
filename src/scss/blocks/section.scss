@@ -9,8 +9,11 @@
         grid-template-columns: 100%;
         grid-template-rows: 150px 570px;
         gap:100px;
+        margin-top:50px;
     }
     &__header{
+        padding: 0 30px;
+        font-size:10px;
         @include responsive(desktop) {
             display: flex;
             flex-direction: column;

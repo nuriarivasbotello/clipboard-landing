@@ -1,12 +1,15 @@
 @use '../mixins/responsive.scss' as *;
 .article-two-columns{
-    
+    display: flex;
+    flex-direction: column;
+    gap:40px;
         @include responsive(desktop) {
+            width: 1440px;
             display: grid;
-            grid-template-columns: 50% 50%;
+            grid-template-columns: 720px 720px;
             grid-template-rows: 100%;
-            gap:100px;
             position: relative;
+            
         }
     
 }
