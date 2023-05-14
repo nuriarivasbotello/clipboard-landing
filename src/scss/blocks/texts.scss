@@ -27,3 +27,11 @@
 
   }
 }
+.information--footer{
+  color: var(--color-paragraph);
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 15px;
+  @include responsive(desktop){
+    text-align: left;
+  }
+}

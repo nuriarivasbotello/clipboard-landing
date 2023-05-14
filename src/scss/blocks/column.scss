@@ -21,3 +21,19 @@
         justify-content: space-between;
     }
 }
+.columns-footer{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin:  auto;
+    font-size: 15px;
+    @include responsive (desktop){
+        width: 500px;
+        gap: 70px;
+        display: flex;
+        flex-direction: row;
+    }
+}

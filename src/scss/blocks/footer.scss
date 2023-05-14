@@ -1,1 +1,9 @@
 /* ESTILOS DEL FOOTER */
+@use '../mixins/responsive.scss' as *;
+.footer{
+    @include responsive (desktop){
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
