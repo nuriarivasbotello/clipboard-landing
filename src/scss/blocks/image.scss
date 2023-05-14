@@ -22,3 +22,9 @@
     overflow:hidden;
   }
 }
+.devices{
+  @include responsive(desktop) {
+    width: 812px;
+    align-items: center;
+  }
+}

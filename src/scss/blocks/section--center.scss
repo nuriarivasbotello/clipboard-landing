@@ -1,0 +1,6 @@
+@use '../mixins/responsive.scss' as *;
+.section--center{
+    @include responsive(desktop) {
+        margin-top:50px;
+    }
+}
