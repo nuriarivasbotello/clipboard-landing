@@ -17,3 +17,13 @@
   font-size: 15px;
   padding: 0 20px;
 }
+.information-tool{
+  text-align: center;
+  font-size: 15px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: var(--color-paragraph);
+  @include responsive(desktop){
+    width: 350px;
+
+  }
+}

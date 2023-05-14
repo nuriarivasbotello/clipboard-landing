@@ -2,15 +2,18 @@
 .buttons {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
   gap: 20px;
   font-family: 'Bai Jamjuree', sans-serif;
   color: white;
+  
   @include responsive(desktop) {
     width: 470px;
     display: flex;
     flex-direction: row;
-    text-align: space-between;
+    justify-content: center;
+    text-align: center;
     margin-top: 20px;
   }
 }
@@ -33,4 +36,7 @@
   border-radius: 5rem;
   box-shadow: 1px 1px 4px black;
   background-color: var(--color-button-mac);
+}
+.buttons--container{
+
 }

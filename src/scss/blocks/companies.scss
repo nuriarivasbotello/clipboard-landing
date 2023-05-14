@@ -1,0 +1,14 @@
+@use '../mixins/responsive.scss' as *;
+.companies{
+    margin:50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:80px;
+    @include responsive(desktop) {
+        margin-top:100px;
+        width: 1110px;
+        flex-direction: row;
+    }
+}
